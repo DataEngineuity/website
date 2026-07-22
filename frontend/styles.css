@@ -106,8 +106,8 @@ section[id] { scroll-margin-top: calc(var(--header-height) + 24px); }
 .year-code__year { opacity: 0; color: var(--accent); transform: translateY(5px); }
 .year-code:hover .year-code__binary, .year-code:focus-visible .year-code__binary { opacity: 0; transform: translateY(-5px); }
 .year-code:hover .year-code__year, .year-code:focus-visible .year-code__year { opacity: 1; transform: translateY(0); }
-.hero__title { max-width: 960px; margin: 0; font-size: clamp(4rem, 10.2vw, 9rem); font-weight: 520; line-height: .89; letter-spacing: -.075em; }
-.hero__title span { color: transparent; -webkit-text-stroke: 1px rgba(237,245,241,.58); }
+.hero__title { max-width: 960px; margin: 0; font-size: clamp(4rem, 10.2vw, 9rem); font-weight: 520; line-height: .89; letter-spacing: -0.015em; }
+.hero__title span { display: inline-block; color: transparent; -webkit-text-stroke: 1px rgba(237,245,241,.58); letter-spacing: 0; font-kerning: normal;}
 .hero__lower { width: min(100%, 630px); margin: clamp(2rem, 5vh, 3.5rem) 0 0 auto; }
 .hero__intro { margin: 0; color: var(--muted); font-size: clamp(1rem, 1.55vw, 1.22rem); line-height: 1.75; }
 .hero__actions { margin-top: 2.2rem; display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; }

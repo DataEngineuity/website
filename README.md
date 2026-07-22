@@ -1,2 +1,3 @@
-# website
-Official company website for Data Engineuity, including its online presence, capabilities, portfolio, collaborations and client engagement features..
+# # Data Engineuity Website
+Official company website for Data Engineuity, including its online presence, capabilities, portfolio, 
+collaborations and client engagement features...

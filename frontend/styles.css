@@ -209,22 +209,7 @@ section[id] { scroll-margin-top: calc(var(--header-height) + 24px); }
   position: relative;
   z-index: 1;
 }
-.capabilities__intro { max-width: 900px; }
-/** .capabilities__grid {
-  position: relative;
-  margin-top: clamp(4rem,8vw,7rem);
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 14px;
-  padding: 14px;
-  border-radius: 26px;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(117,239,180,.09), transparent 32%),
-    radial-gradient(circle at 80% 70%, rgba(117,239,180,.06), transparent 34%),
-    linear-gradient(180deg, rgba(117,239,180,.025), rgba(255,255,255,.01));
-  box-shadow: inset 0 0 0 1px rgba(117,239,180,.05);
-}
-**/
+
 .capabilities__grid {
   position: relative;
 
@@ -316,9 +301,6 @@ section[id] { scroll-margin-top: calc(var(--header-height) + 24px); }
 
 .contact {
   min-height: 78svh;
-
-  /*padding-top: clamp(4rem, 7vw, 6rem);
-  padding-bottom: clamp(4rem, 7vw, 6rem);*/
 
   padding-block: 4rem;
 
@@ -631,43 +613,45 @@ section[id] { scroll-margin-top: calc(var(--header-height) + 24px); }
 
 .back-to-top {
   position: fixed;
-  right: clamp(1.25rem, 3vw, 2.5rem);
-  bottom: clamp(1.25rem, 3vw, 2.5rem);
+  right: clamp(1rem, 2.5vw, 2rem);
+  bottom: clamp(1rem, 2.5vw, 2rem);
   z-index: 900;
 
-  min-height: 48px;
-  padding: 0.4rem 0.45rem 0.4rem 1rem;
+  width: 58px;
+  height: 58px;
 
   display: inline-flex;
   align-items: center;
-  gap: 0.8rem;
+  justify-content: center;
 
-  color: var(--text);
+  padding: 0;
+
+  border: 1px solid rgba(117, 239, 180, 0.34);
+  border-radius: 50%;
+
+  color: var(--accent);
   background: rgba(7, 17, 15, 0.84);
 
-  border: 1px solid rgba(117, 239, 180, 0.2);
-  border-radius: 999px;
-
-  -webkit-backdrop-filter: blur(16px) saturate(140%);
-  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  backdrop-filter: blur(14px) saturate(140%);
 
   box-shadow:
-    0 12px 35px rgba(0, 0, 0, 0.22),
-    0 0 24px rgba(117, 239, 180, 0.04);
+    0 10px 30px rgba(0, 0, 0, 0.22),
+    0 0 22px rgba(117, 239, 180, 0.05);
 
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 
-  transform: translateY(16px) scale(0.96);
+  transform: translateY(14px) scale(0.95);
 
   transition:
     opacity 220ms ease,
     visibility 220ms ease,
     transform 220ms ease,
-    color 180ms ease,
     border-color 180ms ease,
-    background 180ms ease;
+    background 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .back-to-top.is-visible {
@@ -680,32 +664,32 @@ section[id] { scroll-margin-top: calc(var(--header-height) + 24px); }
 
 .back-to-top:hover,
 .back-to-top:focus-visible {
-  color: var(--accent);
-  background: rgba(10, 26, 21, 0.94);
-  border-color: rgba(117, 239, 180, 0.42);
-
   transform: translateY(-3px);
-}
 
-.back-to-top__text {
-  font-size: 0.72rem;
-  font-weight: 650;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  border-color: rgba(117, 239, 180, 0.65);
+  background: rgba(10, 26, 21, 0.94);
+
+  box-shadow:
+    0 12px 34px rgba(0, 0, 0, 0.24),
+    0 0 26px rgba(117, 239, 180, 0.12);
 }
 
 .back-to-top__icon {
-  width: 37px;
-  height: 37px;
+  width: 40px;
+  height: 40px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
+  border-radius: 50%;
+
   color: var(--bg);
   background: var(--accent);
 
-  border-radius: 50%;
+  box-shadow:
+    0 0 0 1px rgba(117, 239, 180, 0.2),
+    0 0 14px rgba(117, 239, 180, 0.2);
 }
 
 .back-to-top__icon svg {
@@ -717,7 +701,6 @@ section[id] { scroll-margin-top: calc(var(--header-height) + 24px); }
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-
 
 @keyframes pulse { 0%,100%{opacity:.25;transform:scaleY(.75)} 50%{opacity:.8;transform:scaleY(1)} }
 
@@ -840,33 +823,18 @@ section[id] { scroll-margin-top: calc(var(--header-height) + 24px); }
     width: 16px;
     height: 16px;
   }
+
   .back-to-top {
     right: 1rem;
     bottom: 1rem;
 
-    width: 48px;
-    height: 48px;
-    min-height: 48px;
-
-    padding: 0;
-
-    justify-content: center;
-  }
-
-  .back-to-top__text {
-    position: absolute;
-
-    width: 1px;
-    height: 1px;
-
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
+    width: 52px;
+    height: 52px;
   }
 
   .back-to-top__icon {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
   }
 }
 

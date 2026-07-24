@@ -1,11 +1,11 @@
 const env = import.meta.env || {};
 
-export const navigation = [
-  { label: "About", href: "#about" },
-  { label: "Capabilities", href: "#capabilities" },
-  { label: "Foundations", href: "#foundations" },
-  { label: "Connect", href: "#contact" },
-];
+export const navigationItems = [
+    { label: "About", sectionId: "about" },
+    { label: "Capabilities", sectionId: "capabilities" },
+    { label: "Foundations", sectionId: "foundations" },
+    { label: "Connect", sectionId: "contact" },
+]
 
 export const principles = [
   {

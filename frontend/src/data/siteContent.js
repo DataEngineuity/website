@@ -77,10 +77,10 @@ export const socialLinks = [
     href: env.VITE_LINKEDIN_URL || "#",
     icon: "linkedin",
   },
-  {
-    platform: "GitHub",
-    handle: env.VITE_GITHUB_HANDLE || "Data Engineuity",
-    href: env.VITE_GITHUB_URL || "#",
-    icon: "github",
-  },
+//  {
+//    platform: "GitHub",
+//    handle: env.VITE_GITHUB_HANDLE || "Data Engineuity",
+//    href: env.VITE_GITHUB_URL || "#",
+//    icon: "github",
+//  },
 ];

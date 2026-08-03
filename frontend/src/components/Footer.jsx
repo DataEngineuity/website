@@ -12,29 +12,6 @@ export default function Footer({ currentYear }) {
           Data Engineuity
         </p>
 
-        <p className="footer-code">
-          <span>Clarity from Complexity</span>
-
-          <span className="footer-code__divider" aria-hidden="true">
-            ·
-          </span>
-
-          <span
-            className="year-code year-code--footer"
-            tabIndex={0}
-            aria-label="Established in 2025"
-            title="Established in 2025"
-          >
-            <span className="year-code__binary" aria-hidden="true">
-              11111101001
-            </span>
-
-            <span className="year-code__year">
-              2025
-            </span>
-          </span>
-        </p>
-
         <div className="footer-origin">
           <div className="footer-origin__part">
             <span
@@ -63,6 +40,29 @@ export default function Footer({ currentYear }) {
             <span>Global Direction</span>
           </div>
         </div>
+
+        <p className="footer-code">
+          <span>Clarity from Complexity</span>
+
+          <span className="footer-code__divider" aria-hidden="true">
+            ·
+          </span>
+
+          <span
+            className="year-code year-code--footer"
+            tabIndex={0}
+            aria-label="Established in 2025"
+            title="Established in 2025"
+          >
+            <span className="year-code__binary" aria-hidden="true">
+              11111101001
+            </span>
+
+            <span className="year-code__year">
+              2025
+            </span>
+          </span>
+        </p>
       </div>
     </footer>
   );

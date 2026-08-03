@@ -636,8 +636,8 @@ section[id] { scroll-margin-top: calc(var(--header-height) + 24px); }
 }
 
 .footer-origin__icon {
-  width: 18px;
-  height: 18px;
+  width: 30px;
+  height: 30px;
   flex: 0 0 auto;
 
   display: inline-flex;
@@ -790,7 +790,6 @@ section[id] { scroll-margin-top: calc(var(--header-height) + 24px); }
 .back-to-top:hover span{
   transform: scale(1.2);
 }
-
 
 .back-to-top__icon svg {
   width: 18px;
